@@ -1,6 +1,7 @@
 ## Mercedes-Benz Website
 
-![Mercedes-Benz Website Screenshot](https://raw.githubusercontent.com/yourusername/repositoryname/branchname/path-to-your-image.png)
+<img width="1239" alt="Untitled" src="https://github.com/user-attachments/assets/2b75c787-0027-4e92-967c-6ef64d609be4">
+
 
 This project is a Mercedes-Benz-themed website built using React, React Router, Bootstrap, and GSAP for animations. The website showcases various features, including an electric vehicle section, car details, a video modal, a contact form, and a responsive navigation bar with a hamburger menu for small screen sizes.
 
