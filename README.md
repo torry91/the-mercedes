@@ -2,6 +2,8 @@
 
 This project is a Mercedes-Benz-themed website built using React, React Router, Bootstrap, and GSAP for animations. The website showcases various features, including an electric vehicle section, car details, a video modal, a contact form, and a responsive navigation bar with a hamburger menu for small screen sizes.
 
+Quick view : https://the-mercedes.netlify.app/
+
 <img width="1239" alt="Untitled" src="https://github.com/user-attachments/assets/60548ff7-02e6-46ee-bb63-e42e741d2e6b">
 
 
