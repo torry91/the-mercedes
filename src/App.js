@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef } from "react";
 import {FaBars, FaTimes } from "react-icons/fa";
 import Contact from "./Contact";
+import Email from "./Email";
 
 
 
@@ -51,6 +52,7 @@ function App() {
         <Route path="/vehicles" element ={<Vehicle/>}/>
         <Route path="/electric" element ={<Electric/>}/>
         <Route path="/shop" element ={<Shop/>}/>
+        <Route path="/email" element={<Email/>}/>
       </Routes>
     </Router>
     </div>

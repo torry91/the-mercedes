@@ -337,6 +337,7 @@ html {
   margin: 0 auto;
   font-family: "PT Serif", serif;
   margin-top: 5%;
+  
 }
 
 .form-group{
@@ -804,7 +805,6 @@ input{
   min-width: 200px;
   text-align: left;
   justify-content: center;
-  
 }
 
 .column img, .large-column img {
@@ -826,6 +826,10 @@ input{
   padding: 0;
 }
 
+.email-form{
+ 
+}
+
 
 
 
@@ -845,6 +849,12 @@ input{
 .contact{
   margin-bottom: 30px;
 }
+
+.email-form{
+  
+}
+
+
 }
 
   @media screen and (max-width: 768px) {
@@ -970,16 +980,17 @@ color: white;
     height: auto;
   }
 
+
 }
 
 
 @media (max-width: 480px) {
   .image-home {
-      max-height: 40vh;
+    max-height: 40vh;
   }
 
   .intro h1 {
-      font-size: 1rem; 
+    font-size: 1rem; 
   }
 
   .imp-info{

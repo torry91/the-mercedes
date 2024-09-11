@@ -17,6 +17,8 @@ const [formData, setFormData] =  useState({
     city: '',
     state: '',
     zipCode: '',
+    vin: '',     
+    comment: ''
 });
     useEffect(() => {
     window.scrollTo(0, 0);
@@ -53,7 +55,7 @@ const handleSubmit = (event) => {
             if (fileInputRef.current) {
                 fileInputRef.current.value = '';
             }
-        console.log('Form submission confirmed');
+            console.log('Form submission confirmed');
         }
     });
     };
@@ -72,7 +74,7 @@ const handleSubmit = (event) => {
     <div className='form-group'>
     <p className=''>Inquiry Type</p>
     <select className='the-form' name="inquiryType" value={formData.inquiryType} onChange={handleChange}>
-        <option disable >Please select inquiry type</option>
+        <option disabled>Please select inquiry type</option>
         <option value>Roadside</option>
         <option value>Customer Care</option>
         <option>General</option>
