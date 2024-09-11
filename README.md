@@ -4,7 +4,10 @@ This project is a Mercedes-Benz-themed website built using React, React Router, 
 
 Quick view : https://the-mercedes.netlify.app/
 
-<img width="1239" alt="Untitled" src="https://github.com/user-attachments/assets/60548ff7-02e6-46ee-bb63-e42e741d2e6b">
+<img width="1239" alt="Untitled" src="https://github.com/user-attachments/assets/a0fb510c-61ce-41c4-aa70-3470c0caf717">
+
+
+
 
 
 ## Features
