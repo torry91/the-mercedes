@@ -3,7 +3,7 @@ import continents from "./continents.jpeg";
 import lightbulb from "./lightbulb.jpeg";
 import locations from "./locations.jpeg";
 
-const TabInfoOne = ({quickFactsRef}) => {
+const TabData = ({quickFactsRef}) => {
 
   return (
 
@@ -55,4 +55,4 @@ const TabInfoOne = ({quickFactsRef}) => {
 }
 
 
-export default TabInfoOne;
+export default TabData;

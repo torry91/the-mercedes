@@ -1,11 +1,11 @@
-import image1 from "./main.png";
-import "./App.css";
+import image1 from "../assets/main.png";
+import "../App.css";
 import { useRef, useState, useEffect} from "react";
 import { useLocation } from "react-router-dom";
-import Tabs from './Tabs/Tabs';
-import TabInfoOne from './Tabs/TabInfoOne';
-import TabInfoTwo from './Tabs/TabInfoTwo';
-import CarouselComponent from "./CarouselComponent";
+import Tabs from '../Tabs/Tabs';
+import TabInfoOne from '../Tabs/TabData';
+import TabInfoTwo from '../Tabs/TabInfo';
+import Carousel from "../HomeCarousel/Carousel";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -13,8 +13,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Tab from '@mui/material/Tab';
 import MuiTabs from '@mui/material/Tabs';
 import {Link} from "react-router-dom";
-import mer1 from "./mercedes.png";
-import mer2 from "./m2.png";
+import mer1 from "../assets/mercedes.png";
+import mer2 from "../assets/m2.png";
 
 const Home = () => {
     const quickFactsRef = useRef(null);
@@ -72,7 +72,7 @@ const Home = () => {
         <div className='introF cont3'>
             <h1 className='bertha title3 stand-ser'>Standard Services</h1>
             <p className='bertha title3 stand-ser2'>The essential digital equipment for your Mercedes – AVAILABLE FREE OF CHARGE.</p>
-            <CarouselComponent/>
+            <Carousel/>
             <div className="the-note">
                 <p className="note1">Note: Everything you need for this: Create your Mercedes me ID and link your Mercedes to it, then activate the Digital Extras. Done!</p>
             </div>
@@ -330,7 +330,7 @@ const Home = () => {
         <img className='bottom-img2'src={mer2} alt="pic" width="180px"/>
         <span className="last-icons">
             <a href="https://www.instagram.com/MercedesBenzUSA/" target="blank" className="so-icon">
-            <i class="fa-brands fa-instagram the-sign"></i>
+            <i className="fa-brands fa-instagram the-sign"></i>
             </a>
             <a href="https://www.youtube.com/@MercedesBenz" target="_blank" rel="noopener noreferrer" className="so-icon">
                     <i className="fab fa-youtube the-sign"></i>

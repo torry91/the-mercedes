@@ -5,7 +5,7 @@ import '../App.css';
 import playBtn from "./driver.jpeg";
 import iconBtn from "./icon.jpeg";
 
-const TabInfoTwo = ({firstDriverRef}) => {
+const TabInfo = ({firstDriverRef}) => {
   const[ModalOpen,setModalOpen]=useState(false);
 
   const openModal = () => setModalOpen(true);
@@ -32,4 +32,4 @@ const TabInfoTwo = ({firstDriverRef}) => {
         </div>
   )
 }
-export default TabInfoTwo;
+export default TabInfo;

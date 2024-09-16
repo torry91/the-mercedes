@@ -1,8 +1,9 @@
 
 import { useRef, useState, useEffect } from "react";
-import "./App.css";
+import "../App.css";
 import Swal from 'sweetalert2';
-import iconUp from './Tabs/icon-up.png';
+import iconUp from '../assets/icon-up.png';
+import { statesList } from "./data";
 
 
 function Email() {
@@ -72,7 +73,7 @@ const handleSubmit = (event) => {
             
     <form className="form-cont" onSubmit={handleSubmit}>
     <div className='form-group'>
-    <p className=''>Inquiry Type</p>
+    <p>Inquiry Type</p>
     <select className='the-form' name="inquiryType" value={formData.inquiryType} onChange={handleChange}>
         <option disabled>Please select inquiry type</option>
         <option value>Roadside</option>
@@ -115,58 +116,12 @@ const handleSubmit = (event) => {
     <label for="first name ">State</label>
     <select className='the-form' name="state" value={formData.state} onChange={handleChange}>
         <option disable >Please select your state</option>
-        <option>Alabama</option>
-        <option>Alaska</option>
-        <option>Arkansas</option>
-        <option>Arizona</option>
-        <option>California</option>
-        <option>Colorado</option>
-        <option>Connecticut</option>
-        <option>Washington DC</option>
-        <option>Delaware</option>
-        <option>Florida</option>
-        <option>Georgia</option>
-        <option>Hawaii</option>
-        <option>Iowa</option>
-        <option>Idaho</option>
-        <option>Illinois</option>
-        <option>Indiana</option>
-        <option>Kansas</option>
-        <option>Kentucky</option>
-        <option>Louisiana</option>
-        <option>Massachusetts</option>
-        <option>Maryland</option>
-        <option>Maine</option>
-        <option>Michigan</option>
-        <option>Maine</option>
-        <option>Minnesota</option>
-        <option>Missouri</option>
-        <option>Mississippi</option>
-        <option>Montana</option>
-        <option>North Carolina</option>
-        <option>North Dakota</option>
-        <option>Nebraska</option>
-        <option>New Hampshire</option>
-        <option>New Jersey</option>
-        <option>New Mexico</option>
-        <option>Nevada</option>
-        <option>New York</option>
-        <option>Ohio</option>
-        <option>Oklahoma</option>
-        <option>Oregon</option>
-        <option>Pennsylvania</option>
-        <option>Rhode Island</option>
-        <option>South Carolina</option>
-        <option >South Dakota</option>
-        <option>Tennessee</option>
-        <option>Texas</option>
-        <option>Utah</option>
-        <option>Virginia</option>
-        <option>Vermont</option>
-        <option>Washington</option>
-        <option>Wisconsin</option>
-        <option>West Virginia</option>
-        <option>Wyoming</option>
+        {
+            statesList.map((state,index) => (
+                <option key={index} 
+                        value={state}>{state}</option>
+            ))
+        }
     </select>
     </div>
 

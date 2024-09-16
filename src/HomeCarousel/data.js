@@ -1,7 +1,4 @@
-import "./App.css";
-
-
-const slides = [
+export const slides = [
     {
         image: "https://images.unsplash.com/photo-1712159018726-4564d92f3ec2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y3VzdG9tZXIlMjBzdXBwb3J0fGVufDB8fDB8fHww",
         title1: "Agent support ",
@@ -48,24 +45,3 @@ const slides = [
         title2: "Conveniently shows you important vehicle data and the due date for the next service via your smartphone, tablet or desktop.",
     },
 ];
-
-const CarouselComponent = () => {
-    
-    return (
-        <div className="carousel-container">
-            <div className="carousel">
-                {slides.map((slide,index)=>(
-                    <div className="slide1" key={index}>
-                        <img src={slide.image} alt={slide.title1} className="pic-slider"/>
-                        <h2 className="sub1">{slide.title1}</h2>
-                        <div className="sub2">
-                        <h2>{slide.title2}</h2>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            </div>
-    )
-}
-
-export default CarouselComponent;
